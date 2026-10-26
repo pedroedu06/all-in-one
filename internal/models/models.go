@@ -32,9 +32,9 @@ type Game struct {
 
 // ScanFolder is a user-configured folder scanned for game executables.
 type ScanFolder struct {
-	ID        uint   `gorm:"primaryKey"`
-	Path      string `gorm:"not null;uniqueIndex"`
-	CreatedAt time.Time
+	ID        uint      `gorm:"primaryKey" json:"id"`
+	Path      string    `gorm:"not null;uniqueIndex" json:"path"`
+	CreatedAt time.Time `json:"createdAt"`
 }
 
 // Setting is a key/value app setting (e.g. the SteamGridDB API key).

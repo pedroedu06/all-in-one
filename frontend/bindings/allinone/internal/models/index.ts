@@ -6,5 +6,6 @@ export {
 } from "./models.js";
 
 export type {
-    Game
+    Game,
+    ScanFolder
 } from "./models.js";

@@ -22,6 +22,15 @@ export interface Game {
 }
 
 /**
+ * ScanFolder is a user-configured folder scanned for game executables.
+ */
+export interface ScanFolder {
+    "id": number;
+    "path": string;
+    "createdAt": string;
+}
+
+/**
  * Source identifies how a game entered the library.
  */
 export enum Source {

@@ -10,6 +10,8 @@ import (
 
 	"allinone/internal/db"
 	"allinone/internal/library"
+	"allinone/internal/settings"
+	"allinone/internal/steamgriddb"
 )
 
 //go:embed all:frontend/dist
@@ -35,6 +37,7 @@ func main() {
 		Description: "Game library launcher",
 		Services: []application.Service{
 			application.NewService(library.NewService(library.NewStore(gdb))),
+			application.NewService(settings.NewService(settings.NewStore(gdb), steamgriddb.New())),
 		},
 		Assets: application.AssetOptions{
 			Handler: application.AssetFileServerFS(assets),

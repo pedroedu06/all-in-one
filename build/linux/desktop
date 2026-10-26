@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=AllInOne
+Comment=Game library launcher
+# The Exec line includes %u to pass the URL to the application
+Exec=/usr/local/bin/allinone %u
+Terminal=false
+Type=Application
+Icon=allinone
+Categories=Utility;
+StartupWMClass=allinone
+
+ 

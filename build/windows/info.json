@@ -1,0 +1,15 @@
+{
+	"fixed": {
+		"file_version": "0.0.1"
+	},
+	"info": {
+		"0409": {
+			"ProductVersion": "0.0.1",
+			"CompanyName": "AllInOne",
+			"FileDescription": "Game library launcher",
+			"LegalCopyright": "(c) 2026, AllInOne",
+			"ProductName": "AllInOne",
+			"Comments": "Game library launcher"
+		}
+	}
+}

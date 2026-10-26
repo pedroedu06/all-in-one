@@ -1,0 +1,63 @@
+:root {
+    --bg: #06070f;
+    --surface: #11131f;
+    --border: rgba(255, 255, 255, 0.1);
+    --text: #f4f6fb;
+    --muted: #9aa6c0;
+    --danger: #ff6b6b;
+    --radius: 10px;
+
+    font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
+    color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+}
+
+body { user-select: none; }
+
+.app { padding: 1.5rem; }
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.toolbar h1 { margin: 0; font-size: 1.4rem; }
+
+.toolbar input {
+    flex: 1;
+    max-width: 360px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+}
+
+.empty { color: var(--muted); }
+.error { color: var(--danger); }
